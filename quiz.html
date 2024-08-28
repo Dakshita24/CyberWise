@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberWise: Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <div class="header">
+        <id class="header-content"><a href="index.html">Home</a></div>
+    </div>
+</head>
+<body>
+    <h1 id="main-header">Take a quiz on any cybersecurity topic!</h1>
+
+    <div class="quiz-container">
+        <div class="quiz" onclick="startQuiz('Introduction to cybersecurity')">
+            <div class="quiz-name">Introduction to cybersecurity</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('CIA triad')">
+            <div class="quiz-name">CIA triad</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('Types of networks')">
+            <div class="quiz-name">Types of networks</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('Data security')">
+            <div class="quiz-name">Data security</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('Identifying Phishing')">
+            <div class="quiz-name">Identifying Phishing</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('Malwares')">
+            <div class="quiz-name">Malwares</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('IOT : Internet of Things')">
+            <div class="quiz-name">IOT : Internet of Things</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('Incident response')">
+            <div class="quiz-name">Incident response</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('Network Topologies')">
+            <div class="quiz-name">Network Topologies</div>
+        </div>
+        <div class="quiz" onclick="startQuiz('Wireshark')">
+            <div class="quiz-name">Wireshark</div>
+        </div>
+    </div>
+
+    <div id="quiz-content" style="display: none;">
+        <h2 id="quiz-title"></h2>
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="feedback"></div>
+        <button id="next-button" style="display: none;" onclick="nextQuestion()">Next Question</button>
+        <div id="result" style="display: none;"></div>
+    </div>
+
+    <script src="quizData.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
